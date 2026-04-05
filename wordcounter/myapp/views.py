@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Feature
 
 def index(request):
     #return HttpResponse('<h1>hi welcome shafayet</h1>')
