@@ -63,3 +63,32 @@ def register(request):
             return redirect('register')
     else:
         return render(request,'register.html')
+    
+
+def login(request):
+    if request.method=='POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = auth.authenticate(username=username,password=password)
+
+        if user is not None:
+            auth.login(request,user)
+            return redirect('/')
+        else:
+            messages.info(request,'credentials invalid')
+            return redirect('login')
+    else:
+        return render(request,'login.html')
+    
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+
+
+def counter(request):
+    posts=[1,2,3,4,5,'tim','tom']
+    return render(request,'counter.html',{'posts':posts})
+
+def post(request,pk):
+    return render(request,'post.html',{'pk':pk})
