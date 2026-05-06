@@ -88,7 +88,7 @@ def logout(request):
 
 def counter(request):
     posts=[1,2,3,4,5,'tim','tom']
-    return render(request,'counter.html',{'posts':posts})
+    return render(request,'counter.html',{'posts': posts})
 
 def post(request,pk):
-    return render(request,'post.html',{'pk':pk})
+    return render(request,'post.html',{'pk': pk})
