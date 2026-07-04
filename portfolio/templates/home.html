@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="{%static 'css/style.css'%}" />
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
   <body>
     <!-- <h1>hi there</h1>
@@ -108,51 +110,102 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-      <h1 class="t-center my-2 t-white f-2">Skills</h1>
-      <div class="services-container flex s-around h-50">
-        <div class="skills-left flex s-center items-center">
-          <img src="{%static 'images/skills.png'%}" alt="" />
+    <!-- ================= SKILLS SECTION ================= -->
+
+<section id="skills">
+
+    <h1 class="skills-title">My Skills</h1>
+    <p class="skills-subtitle">
+        Technologies & Tools I use to build modern web applications.
+    </p>
+
+    <div class="skills-grid">
+
+        <!-- Python -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-python"></i>
+            </div>
+
+            <h3>Python & Django</h3>
+
         </div>
 
-        <div class="skills-right flex items-center">
-          <div class="skillss-container">
-            <div class="java bar p-relative">
-              <span class="bar-content left t-white"> Python & Django</span
-              ><span class="bar-content right-skills t-white">80%</span>
-            </div>
-            <div class="c bar p-relative">
-              <span class="bar-content left t-white">C</span>
-              <span class="bar-content right-skills t-white">90%</span>
+        <!-- C -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-c"></i>
             </div>
 
-            <div class="golang bar p-relative">
-              <span class="bar-content left t-white">Go (Golang)</span>
-              <span class="bar-content right-skills t-white">50%</span>
-            </div>
-            <div class="html bar p-relative">
-              <span class="bar-content left t-white">HTML</span
-              ><span class="bar-content right-skills t-white">90%</span>
-            </div>
-            <div class="css bar p-relative">
-              <span class="bar-content left t-white">CSS</span
-              ><span class="bar-content right-skills t-white">80%</span>
-            </div>
-            <div class="js bar p-relative">
-              <span class="bar-content left t-white">JavaScript</span
-              ><span class="bar-content right-skills t-white">60%</span>
-            </div>
-            <!-- <div class="python bar p-relative">
-              <span class="bar-content left t-white">Python</span
-              ><span class="bar-content right-skills t-white">50%</span>
-            </div> -->
-            <div class="mysql bar p-relative">
-              <span class="bar-content left t-white">MySQL</span
-              ><span class="bar-content right-skills t-white">40%</span>
-            </div>
-          </div>
+            <h3>C Programming</h3>
+
+            
         </div>
-      </div>
+
+        <!-- Go -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Go (Golang)</h3>
+
+            
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+
+            <h3>HTML5</h3>
+
+            
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+
+            <h3>CSS3</h3>
+
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+            </div>
+
+            <h3>JavaScript</h3>
+
+        </div>
+
+        <!-- MySQL -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+
+            <h3>MySQL</h3>
+
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-brands fa-git-alt"></i>
+            </div>
+
+            <h3>Git & GitHub</h3>
+
+        </div>
+
+    </div>
+
     </section>
 
      <!-- Projects Section -->
@@ -228,16 +281,20 @@
             <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
         </ul>
         <ul class="flex s-center w-80 font-awesome ">
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/shafayet-karim-3826411a6/"
+            target="_blank" target="_blank">
                 <li><i class="fa-brands fa-linkedin-in"></i></li>
             </a>
-            <a href="" target="_blank">
+            <a href="https://github.com/Karim-162" target="_blank">
                 <li><i class="fa-brands fa-github"></i></li>
             </a>
-                <a href="" target="_blank">
-                    <li><i class="fa-brands fa-instagram"></i></li>
+                <a href="https://www.facebook.com/karimshafayet" target="_blank">
+                    <li><i class="fa-brands fa-facebook"></i></li>
             </a>
-            
+            </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shafayetkarim04@gmail.com" target="_blank">
+                    <li><i class="fa-brands fa-envelope"></i></li>
+            </a>
         </ul>
         <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Shafayet Karim 
         </span></p>
